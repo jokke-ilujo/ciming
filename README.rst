@@ -164,4 +164,4 @@ Documentation
 =============
 
 For more detailed documentation of the service, client and their
-capabilities can be found from the 'docs/' directory of this repo.
+capabilities can be found from the 'doc/' directory of this repo.
