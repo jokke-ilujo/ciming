@@ -65,7 +65,7 @@ be high priority for the future development.
 GIMinG Architecture Design
 ==========================
 
-The design of GIMinG is to provide service with REsTFul API for
+The design of GIMinG is to provide service with RESTful API for
 multitenant operations. Also CLI client is provided by the project
 to interface with the API.
 
@@ -97,7 +97,7 @@ Authentication
 
 GIMinG will always need user interaction to sync the infromation from
 the source/target clouds. User can either provide the credentials to
-the different source/target clouds via the REsTFul API or the
+the different source/target clouds via the RESTful API or the
 credentials can be saved to OpenStack Barbican service. In the later
 case the user needs to provide only the credentials to the environment
 so that GIMinG can fetch the credentials to the clouds it needs.
@@ -126,7 +126,7 @@ in the used clouds. This will allow user to specify the identifiers
 of the same image data between clouds as long as the user has access
 to those images.
 
-If the Image is created via REsTFul API user needs to upload the data
+If the Image is created via RESTful API user needs to upload the data
 only once and it will be cached within the service until all
 requested images has been created. After that the data will be removed
 and GIMinG will not provide possibility to download the image data
@@ -154,7 +154,7 @@ Client
 
 CLI and python clients will be provided to interact with the service.
 
-Client will facilitate interfacing with the REsTFul API and
+Client will facilitate interfacing with the RESTful API and
 authentication with Keystone. The new API capabilities will be enabled
 simultaneously in the client and the provided client will always be
 reference implementation how to interact with the API.
